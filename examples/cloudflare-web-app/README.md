@@ -58,7 +58,7 @@ public route and security headers. Production deployment requires explicit
 approval after preview evidence.
 
 **Source of this prompt:**
-`https://github.com/arturochang/project-bootstrap-playbook` at release `v2.1.0`.
+`https://github.com/arturochang/project-bootstrap-playbook` at release `v2.2.0`.
 ```
 
 Expected capability analysis:

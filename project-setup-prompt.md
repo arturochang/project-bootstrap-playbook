@@ -1,6 +1,6 @@
 # Project Setup Prompt
 
-**Template version:** 2.1.0
+**Template version:** 2.2.0
 
 **Last updated:** 2026-09-20
 
@@ -92,7 +92,7 @@ production deployment]. Define "ready" in observable terms: exact checks that
 pass, URLs or artifacts that exist, and any human-only evidence still required.
 
 **Source of this prompt:** [repository URL + immutable tag or commit, or "local
-copy"]. Record this and template version 2.1.0 in the generated project so a
+copy"]. Record this and template version 2.2.0 in the generated project so a
 future update can compare versions instead of guessing what changed.
 
 ---
@@ -181,7 +181,10 @@ manager pins, chosen environments, canonical gate, deployment command, and paths
 to current status and handoff. Record answers, not secrets. If this prompt is
 later distributed with a maintained setup CLI and published schema, it may use a
 validated `.project-setup.yml` instead; do not invent a generic updater or YAML
-schema merely to satisfy this prompt.
+schema merely to satisfy this prompt. When using this prompt from its source
+repository, start from
+[`templates/setup-provenance.md`](templates/setup-provenance.md) at the same tag
+or commit.
 
 **When two documents disagree, prefer the more focused one, then the newer
 explicit decision — and surface the conflict rather than silently picking.** Six
@@ -905,7 +908,10 @@ reads as coverage of an invariant it does not actually hold.
 ## 9. Start here
 
 1. Identify the operating mode. In an existing repository, inventory actual
-   state and preserve the user's dirty tree before doing anything else.
+   state and preserve the user's dirty tree before doing anything else. If a
+   product plan already exists, evaluate it with
+   [`checklists/product-plan-readiness.md`](checklists/product-plan-readiness.md)
+   from the same pinned release before asking questions.
 2. Ask whatever is genuinely unresolved in §0 — but only what would change the
    work, and ask it all at once. Record safe assumptions for everything else.
 3. Research prior art and verify provider claims against primary sources, with

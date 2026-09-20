@@ -47,7 +47,7 @@ rename plan, handle collisions, and apply only after explicit confirmation, with
 tests and packaged install instructions.
 
 **Source of this prompt:**
-`https://github.com/arturochang/project-bootstrap-playbook` at release `v2.1.0`.
+`https://github.com/arturochang/project-bootstrap-playbook` at release `v2.2.0`.
 ```
 
 Expected tailoring:

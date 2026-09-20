@@ -16,11 +16,23 @@ human and a coding agent establish:
 
 ## Use it
 
-1. Open [`project-setup-prompt.md`](project-setup-prompt.md).
-2. Replace the bracketed fields in section 0.
-3. Give the complete prompt to your coding agent in the target repository.
-4. Review irreversible or high-cost decisions when the prompt asks you to.
-5. Keep the generated status and handoff documents current as the project grows.
+For the product-plan-first workflow:
+
+1. Create `docs/product-plan.md` from
+   [`templates/product-plan.md`](templates/product-plan.md), or bring an existing
+   plan with equivalent content.
+2. Commit the plan as a clean checkpoint.
+3. Give your coding agent
+   [`prompts/bootstrap-from-product-plan.md`](prompts/bootstrap-from-product-plan.md)
+   and select a delivery target.
+4. Answer its one consolidated clarification batch.
+5. Review irreversible or high-cost decisions, then let it execute through the
+   selected target.
+6. Keep the generated status and handoff documents current as the project grows.
+
+For a project without an existing plan, open
+[`project-setup-prompt.md`](project-setup-prompt.md), replace the bracketed fields
+in section 0, and give the complete prompt to your coding agent.
 
 Reference an immutable release tag or commit when using the prompt from another
 project. Record that source and version in the generated project's setup
@@ -30,6 +42,11 @@ provenance document.
 
 - [`project-setup-prompt.md`](project-setup-prompt.md) — the canonical,
   provider-neutral setup workflow.
+- [`prompts/`](prompts/) — copy-ready entry prompts, including bootstrap from an
+  existing product plan.
+- [`templates/`](templates/) — product-plan and setup-provenance starting points.
+- [`checklists/`](checklists/) — readiness checks that determine whether the
+  agent can proceed, record assumptions, or must ask for clarification.
 - [`profiles/`](profiles/) — dated provider decision guidance, currently
   including Cloudflare product
   selection, configuration, testing, cost, and deployment guidance.

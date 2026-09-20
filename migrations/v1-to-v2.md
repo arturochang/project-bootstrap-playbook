@@ -15,7 +15,7 @@ workflow migration, not by rerunning the prompt over the repository.
 ## Required changes
 
 1. Add `docs/setup-provenance.md` with the original prompt source if known,
-   `version: 1.x`, the migration target `2.1.0`, setup mode, provider, runtime,
+   `version: 1.x`, the migration target `2.2.0`, setup mode, provider, runtime,
    package manager, environments, canonical gate, deployment command, status
    path, and handoff path. Use prose or a small table; do not invent a parser.
 2. Classify the repository as new-project continuation, existing-project

@@ -2,6 +2,16 @@
 
 All notable changes to the project setup prompt are recorded here.
 
+## 2.2.0 - 2026-09-20
+
+- Added a copy-ready workflow for bootstrapping from an existing
+  `docs/product-plan.md`.
+- Added product-plan and setup-provenance templates.
+- Added a product-plan readiness checklist with explicit verdicts, question-batch
+  guidance, and hard stops.
+- Connected the new workflow artifacts from the README and canonical prompt
+  version.
+
 ## 2.1.0 - 2026-09-20
 
 - Added the first dated Cloudflare provider profile.
