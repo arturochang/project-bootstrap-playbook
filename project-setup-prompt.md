@@ -1,6 +1,6 @@
 # Project Setup Prompt
 
-**Template version:** 2.0.0
+**Template version:** 2.1.0
 
 **Last updated:** 2026-09-20
 
@@ -92,7 +92,7 @@ production deployment]. Define "ready" in observable terms: exact checks that
 pass, URLs or artifacts that exist, and any human-only evidence still required.
 
 **Source of this prompt:** [repository URL + immutable tag or commit, or "local
-copy"]. Record this and template version 2.0.0 in the generated project so a
+copy"]. Record this and template version 2.1.0 in the generated project so a
 future update can compare versions instead of guessing what changed.
 
 ---
@@ -615,7 +615,9 @@ it is twice the maintenance.
 positions, not conclusions — put the ones that survive §0's constraints into
 `AGENTS.md` under Architecture, each as a rule with its one-line reason, and
 record any you reject in `docs/product-plan.md` with why. Re-verify the
-product-status claims before relying on them; this list is dated below.
+product-status claims before relying on them; this list is dated below. When
+using this prompt from its source repository, also consult the dated companion
+[`profiles/cloudflare.md`](profiles/cloudflare.md) at the same tag or commit.
 
 - Start new applications on **Workers + Static Assets**, not Pages. Pages
   continues to work and remains supported, but Cloudflare's feature work and

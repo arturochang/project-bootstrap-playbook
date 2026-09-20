@@ -26,6 +26,21 @@ Reference an immutable release tag or commit when using the prompt from another
 project. Record that source and version in the generated project's setup
 provenance document.
 
+## Repository contents
+
+- [`project-setup-prompt.md`](project-setup-prompt.md) — the canonical,
+  provider-neutral setup workflow.
+- [`profiles/`](profiles/) — dated provider decision guidance, currently
+  including Cloudflare product
+  selection, configuration, testing, cost, and deployment guidance.
+- [`migrations/`](migrations/) — changes existing consumers must make when the
+  prompt's output contract changes.
+- [`examples/`](examples/) — filled project intakes for a small local-only tool
+  and a production-oriented Cloudflare web application.
+
+Profiles and examples inform the canonical prompt; they do not silently override
+it. Recheck volatile provider facts against the linked primary documentation.
+
 ## What makes this different
 
 Most project starters copy files. Most agent frameworks prescribe a coding

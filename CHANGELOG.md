@@ -2,6 +2,12 @@
 
 All notable changes to the project setup prompt are recorded here.
 
+## 2.1.0 - 2026-09-20
+
+- Added the first dated Cloudflare provider profile.
+- Added migration guidance for adopting version 2 from a version 1 project.
+- Added minimal and production-oriented Cloudflare project-input examples.
+
 ## 2.0.0 - 2026-09-20
 
 - Made the prompt coding-agent and cloud-provider neutral.
